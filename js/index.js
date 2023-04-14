@@ -5,14 +5,20 @@ document.addEventListener("DOMContentLoaded", function() {
   })
 })
 
+// let element = document.querySelector('.carousel-item');
+// element.style.width = '500px';
+
+
 jQuery('.list-carousel').slick({
-  lazyLoad: 'ondemand',
+  // lazyLoad: 'ondemand',
   slidesToShow:6,
-  slidesToScroll:3,
+  slidesToScroll:5,
   arrows:true,
   autoplay:true,
   autoplaySpeed: 2000,
   speed:2000,
+  centerMode: true,
+  variableWidth: true,
   pauseOnHover:true,
   nextArrow:'<div class="sprite-next"><img src="./img/right.png" alt="pointer_right"></div>', 
   prevArrow: '<div class="sprite-prev"><img src="./img/left.png" alt="pointer_left"></div>',
@@ -42,7 +48,9 @@ jQuery('.list-carousel').slick({
         slidesToShow: 1,
         slidesToScroll: 1,            
         arrows:false,
+        adaptiveHeight: true
         }
     }
-    ]
+    ]    
 })
+

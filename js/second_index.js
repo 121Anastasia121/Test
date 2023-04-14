@@ -1,7 +1,7 @@
 jQuery('.list-carousel_block_third').slick({
-  lazyLoad: 'ondemand',
+  // lazyLoad: 'ondemand',
   slidesToShow:6,
-  slidesToScroll:3,
+  slidesToScroll:5,
   arrows:true,
   autoplay:true,
   autoplaySpeed: 3500,
@@ -17,6 +17,8 @@ jQuery('.list-carousel_block_third').slick({
         slidesToShow: 3,
         slidesToScroll: 2,
         arrows:false,
+        centerMode: true,
+        variableWidth: true,      
       }
     },
 
@@ -26,6 +28,8 @@ jQuery('.list-carousel_block_third').slick({
         slidesToShow: 2,
         slidesToScroll: 1,
         arrows:false,
+        centerMode: true,
+        variableWidth: true,   
       }
     },
 
@@ -35,6 +39,8 @@ jQuery('.list-carousel_block_third').slick({
         slidesToShow: 1,
         slidesToScroll: 1,            
         arrows:false,
+        centerMode: true,
+        variableWidth: true,      
         }
     }
     ]

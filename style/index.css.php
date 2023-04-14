@@ -283,6 +283,7 @@ display: flex;
   margin: 0px 10px;
 }
 
+
 .carousel-item img{
   padding-top: 11px;
 }
@@ -473,6 +474,10 @@ display: flex;
   .title-m {
     font-size: 25px;
   }
+}
+
+.slick-slide {
+  width: 183px;
 }
 
 @media (max-width:926px) {

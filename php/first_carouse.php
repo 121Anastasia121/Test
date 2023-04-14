@@ -31,7 +31,7 @@ $arr = [
  ?>
 
 <div class="carousel-item">
-  <img data-lazy="../img/<?php echo $val; ?>.png" class="d-block w-100" alt="...">
+  <img src="../img/<?php echo $val; ?>.png" class="d-block w-100" alt="...">
   <p>Жидкий грунт</p>
 </div>
 
