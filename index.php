@@ -130,6 +130,22 @@
            </div>
           </div>
         </section>
+
+        <section class="fourth-sect">
+          <div class="container">
+          <div class="title-m title-third">
+              Каталог продукции
+              <span>НПО «СТРИМ»</span>
+            </div>
+            <div id="wrapper_catalog">
+                  <?php
+                
+                  include './php/catalog.php';
+               
+                  ?>
+           </div>
+          </div>
+        </section>
       </main>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
