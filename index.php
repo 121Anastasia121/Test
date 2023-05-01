@@ -6,13 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/zero-style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="./style/zero.css.php">
     <link rel="stylesheet" href="./style/index.css.php">
     <link rel="stylesheet" href="./slick/slick.css">
     <link rel="stylesheet" href="./slick/slick-theme.css">
-
     <title>Test</title>
   </head>
   <body>
@@ -146,11 +148,60 @@
            </div>
           </div>
         </section>
+
+        <section class="fifth-sect">
+          <div class="container">
+          <div class="title-m title-fourth">
+              Документы, подтверждающие качество
+              <span>и безопасность продукции</span>
+            </div>
+            <div class="wrapper_security-directory">
+                  <?php
+                
+                  include './php/security_directory.php';
+               
+                  ?>
+           </div>
+          </div>
+        </section>
+
+        <section class="sixth-sect">
+          <div class="container">
+            <div class="parent-content">
+
+            <?php
+                
+                include './php/html-sixth-sect.php';
+             
+                ?>
+
+            </div>                
+          </div>
+        </section>
       </main>
+      <footer class="site-footer">
+            <div class="site-info">
+
+            <?php
+                
+                include './php/site-footer.php';
+             
+                ?>
+            
+            <div style="position:relative;overflow:hidden;" id="yang-map"><a href="https://yandex.by/maps?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Яндекс Карты</a><a href="https://yandex.by/maps/geo/53176661/?ll=31.221928%2C52.828132&utm_medium=mapframe&utm_source=maps&z=6.74" style="color:#eee;font-size:12px;position:absolute;top:14px;">Гомель — Яндекс Карты</a><iframe src="https://yandex.by/map-widget/v1/?ll=31.221928%2C52.828132&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1MzE3NjY2MRIe0JHQtdC70LDRgNGD0YHRjCwg0JPQvtC80LXQu9GMIgoNPx34QRVYslFC&z=6.74" width="100%" height="100%" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+          </div>
+          <div class="container">
+                <div class="link-media">
+                <span>УНП: 490857479</span>
+                <a href="https://medialime.by/" class="development-site">Разработка и дизайн сайта <span>MEDIA<span style="color:#02A62D">LIME</span></span></a>
+              </div>
+            </div>
+      </footer>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
     <script src ="./slick/slick.min.js"></script>
     <script src="./js/index.js"></script>
     <script src="./js/second_index.js"></script>
+    <script src="./js/security_directory.js"></script>
   </body> 
 </html>

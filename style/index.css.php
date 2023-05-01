@@ -374,6 +374,7 @@ display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
+  margin-bottom: 80px;
 }
 
 .catalog {
@@ -384,6 +385,15 @@ display: flex;
   text-decoration:none;
   max-width: 285px;
   cursor:pointer;
+  overflow:hidden;
+}
+
+.catalog-img {
+  transition: all 1s ease;
+}
+
+.catalog-img:hover{
+  transform: scale(1.2);
 }
 
 .catalog div {
@@ -394,6 +404,201 @@ display: flex;
   color: #012D5C;
   margin-top: 24px;
 }
+
+
+/*-------Fifth Section-------*/
+
+.fifth-sect {
+  background-image: url(../safety.png);
+  background-size: cover;
+  display: flex;
+}
+
+.title-fourth {
+  font-family: 'Montserrat';
+}
+
+.wrapper_security-directory {
+  margin-bottom: 149px;
+}
+
+.sprite-prev-directory {
+  position: absolute;
+  margin-left: -72px;
+  margin-top: 127px;
+}
+
+.sprite-next-directory {
+  position: absolute;
+  margin-left: 1246px;
+  margin-top: -135px;
+}
+
+.carousel-security-directory {
+  cursor:pointer;
+  transition: all 1s ease;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.carousel-security-directory:hover{
+  transform: scale(1.1);
+}
+
+<!-- .img-popup {
+  width: 100%;
+
+} -->
+
+
+/*-------Sixth Section-------*/
+
+.parent-content {
+  display: flex;
+}
+
+.wrapper-text-video {
+  width: 50%;
+}
+
+.caption {
+  color: #012D5C;
+  text-align: inherit;
+  margin-top: 117px;
+  width: 100%;
+}
+
+.wrapper-desc {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #1D2936;
+  height: auto;
+  margin-bottom: 48px;
+  width: 100%;
+}
+
+.video-presentation {
+  height: 292px;
+  background-image: url(../road.png);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.video-presentation a {
+  transition: all 1s ease;
+}
+
+.video-presentation a:hover{
+  transform:scale(1.2);
+}
+
+.main-certificate{
+  margin-top: 116px;
+  margin-bottom: 70px;
+  margin-left: 48px;
+}
+
+.main-certificate img{
+  width: 497px;
+  height: 702px;
+}
+
+
+/*-------Footer-------*/
+
+.box-contacts{
+  width: 401px;
+  height: 586px;
+  position: absolute;
+  z-index: 1;
+  background-color: #fff;
+
+}
+
+.wrapper-box-contacts{
+  margin-left: 80px;
+}
+
+.contacts{
+  font-weight: 700;
+  color:#012D5C;
+  margin-top: 64px;
+  text-align: inherit;
+  margin-bottom: 24px;
+}
+
+.nav-list {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 4px;
+  color:#A0A0A0;
+}
+
+.description-nav-list {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1D1817;
+  margin-bottom: 16px;
+}
+
+.description-nav-list img{
+  width: 20px;
+  height: 20px;
+}
+
+.button-footer{
+  margin-top: 16px;
+  margin-bottom: 64px;
+}
+
+.nav-list-email {
+  color:red;
+}
+
+#yang-map{
+  position: relative;
+  height: 586px;
+}
+
+.link-media {
+  height: 81px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.link-media span{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.development-site{
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.development-site span{
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #1E1E1E;
+}
+
 
 
 
@@ -426,6 +631,15 @@ display: flex;
 
   .slick-track div {
     width: 177px;
+  }
+
+  .main-certificate img{
+    width: 100%;
+    height: auto;
+  }
+
+  .wrapper-desc{
+    font-size: 14px;
   }
 }
 
@@ -574,6 +788,40 @@ display: flex;
   .catalog div {
     font-size: 60%;
   }
+
+  .parent-content{
+    flex-wrap: wrap;
+  }
+
+  .caption{
+    margin-top: 68px;
+    margin-bottom: 15px;
+  }
+
+  .wrapper-text-video{
+    width: 100%;
+  }
+
+  .main-certificate{
+    margin-left: 0px;
+    margin-top: 32px;
+  }
+
+  .wrapper-box-contacts {
+    margin-left: 0px;
+  }
+
+  .link-media {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .box-contacts {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    height: auto;
+  }
 }
 
 @media (max-width:533px) {
@@ -591,13 +839,28 @@ display: flex;
   }
 
   .link-tel {
-    font-size: 14px;
+    font-size: 14px;          
     top: 14px;
   }
 
   .container {
     max-width: 400px;
   }
+
+  .contacts{
+    font-size: 70%;
+  }
+
+  .nav-list,
+  .description-nav-list{
+    font-size: 70%;
+  }
+
+  .button-footer {
+    width: 70%;
+    font-size: 80%;
+  }
+
 }
 
 @media (max-width:325px) {
